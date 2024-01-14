@@ -1,14 +1,14 @@
 import Button from "./Button";
-import data from "../data.json";
+import data from "../data.js";
 import DataLine from "./DataLine";
 const RightSide = () => {
   return (
-    <aside className="right w-full py-8 px-6 md:pr-12 rounded-3xl flex flex-col ">
+    <aside className="right w-full py-8 px-6 md:px-12 rounded-3xl flex flex-col ">
       <h1 className="text-darkGrayBlue font-bold text-xl mb-4">Summary</h1>
 
-      {data.map((item, index) => (
+      {data.map((item) => (
         <DataLine
-          key={index}
+          key={item.id}
           icon={item.icon}
           category={item.category}
           score={item.score}

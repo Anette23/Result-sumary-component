@@ -8,7 +8,7 @@ const DataLine = ({ category, score, icon }) => {
 
   const { backgroundColor, categoryColor } = categoryColors[category] || {};
   return (
-    <article className={`flex justify-between gap-10 mb-4 ${backgroundColor} p-3 rounded-xl`}>
+    <article className={`flex justify-between gap-10 mb-5 ${backgroundColor} p-3 rounded-xl`}>
     <div className="flex gap-2">
       <img src={icon} alt={`${category} icon`} />
       <h2 className={`font-bold ${categoryColor} text-base`}>{category}</h2>
